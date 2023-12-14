@@ -1,0 +1,29 @@
+<p>about works!</p>
+
+<!-- <button (click)="getAllData()">click</button> -->
+<button (click)="getData(2)">click2</button>
+
+<div>
+    <table>
+        <thead>
+            <tr>
+                <!-- <th>body</th> -->
+                <th>id</th>
+                <th>title</th>
+                <th>userID</th>
+            </tr>
+        </thead>
+    
+            <tbody>
+                <tr *ngFor="let items of AllData">
+                    <!-- <td>{{items.body}}</td> -->
+                    <td>{{items.id}}</td>
+                    <td>{{items.title}}</td>
+                    <td>{{items.userId}}|JSON</td>
+                    <button (click)="delete(items)"  >Delete</button>
+                   </tr>
+            </tbody>
+    </table>
+
+</div>
+

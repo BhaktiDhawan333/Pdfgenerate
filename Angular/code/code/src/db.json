@@ -1,0 +1,18 @@
+{
+    "datahub": [
+        {
+            "id": 1,
+            "name": "Bhakti Dhawan",
+            "job": "Developer",
+            "salary": 100000
+
+        },
+        {
+            "id": 2,
+            "name": "you",
+            "job": "Developer",
+            "salary": 200000
+
+        }
+    ] 
+}

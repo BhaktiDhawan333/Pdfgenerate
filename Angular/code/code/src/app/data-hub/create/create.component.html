@@ -1,0 +1,40 @@
+<div class="col-md-8" id="htmlData">
+  <table class="table table-bordered">
+    <tr class="table-primary">
+      <th>Id</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+    <tr *ngFor="let user of USERS">
+      <th>{{user.id}}</th>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.phone}}</td>
+    </tr>
+  </table>
+
+  <form [formGroup]="myForm" id="htmlData">
+    <!-- Naam: <input type="text" formControlName="name"><br><br>
+    Age: <input type="number" formControlName="age"><br><br> -->
+
+    <div>
+      <img src="/assets/lion.png" width="100" height="100"> 
+    </div>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore libero repellat eveniet quod est fugiat officiis
+      aliquam quis quas? Amet officiis rerum placeat. Vero necessitatibus dolores eos voluptatum cupiditate natus.
+      Nulla eum id provident aliquam neque, asperiores, autem doloremque consequuntur commodi consectetur esse harum?
+      Facilis iusto est ullam, praesentium sequi blanditiis ducimus, corrupti labore, ipsum eligendi veniam ea
+      voluptatibus architecto?
+      Id odio provident tempore numquam fuga enim, expedita possimus quos facilis neque architecto harum quaerat quam
+      quod praesentium sint voluptas ea exercitationem eaque quas. Quibusdam alias quam veritatis ipsa minus!
+    </p>
+
+  </form>
+<br>
+  <div class="col-md-4 text-right">
+    <button class="btn btn-success btn-block" (click)="openPDF()">Download PDF</button>
+  </div>
+  <!-- <button (click)="openPDF()">Save</button> -->
